@@ -17,7 +17,7 @@ def generate_recipe(ingredients, cuisine):
             {"role": "system", "content": "You are a helpful assistant that generates detailed recipes."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=300,  # Increase max_tokens for more detailed instructions
+        max_tokens=300,  # Adjust as needed
         temperature=0.7
     )
     return response.choices[0].message['content'].strip()
