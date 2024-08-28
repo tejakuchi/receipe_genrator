@@ -2,7 +2,7 @@ from openai import OpenAI
 import os
 
 # Initialize OpenAI API with environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def generate_recipe(ingredients, cuisine):
     prompt = (
@@ -45,7 +45,7 @@ import streamlit as st
 import os  # To access environment variables
 
 # Initialize OpenAI API with environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Function to generate a recipe based on ingredients and cuisine type
 def generate_recipe(ingredients, cuisine):
